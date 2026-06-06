@@ -12,4 +12,4 @@ def calculate_rho_proxies(node_data, G):
     nodes = list(G.nodes())
     rho3 = np.array([node_data[n]['local_load'] for n in nodes], dtype=float)
     rho3p = np.array([_scar(G, n) for n in nodes], dtype=float)
-    rho5 = np.array([node_data[n
+    rho5 = np.array([node_data[n]['saturation'] for n in nodes
