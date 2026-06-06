@@ -14,4 +14,4 @@ class DodecahedralGeometry:
 def build_dodecahedral_geometry():
     g = nx.dodecahedral_graph()
     vertices = tuple(sorted(g.nodes()))
-    edges = tuple(sorted((min(a, b), max(a, b)) for a
+    edges = tuple(sorted((min(a, b), max(a, b)) for a, b in g
