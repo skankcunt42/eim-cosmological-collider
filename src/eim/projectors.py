@@ -13,4 +13,4 @@ def calculate_rho_proxies(node_data, G):
     return rho3, rho3p, rho5
 
 
-def calculate_memory_seam_vectors_and_norms(G, node
+def calculate_memory
