@@ -13,3 +13,4 @@ __all__ = [
     'calculate_rho_proxies', 'calculate_memory_seam_vectors_and_norms',
     'run_tri_lobe_eim_simulation', 'plot_diagnostics'
 ]
+from .connectors import export_simulation_to_excel, save_graph_state, load_graph_state, connect_to_semantic_dictionary, run_and_export
