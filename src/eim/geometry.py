@@ -1,20 +1,11 @@
 """Dodecahedral geometry helpers for EIM projector audits."""
-from __future__ import annotations
-
 from dataclasses import dataclass
-from typing import Dict, List, Tuple
-
+from typing import Dict, Tuple
 import networkx as nx
 import numpy as np
-
-Edge = Tuple[int, int]
-Face = Tuple[int, ...]
-
-
+Edge=Tuple[int,int]
+Face=Tuple[int,...]
 @dataclass(frozen=True)
 class DodecahedralGeometry:
-    graph: nx.Graph
-    vertices: Tuple[int, ...]
-    edges: Tuple[Edge, ...]
-    edge_index: Dict[Edge, int]
-    faces
+    graph:nx.Graph; vertices:Tuple[int,...]; edges:Tuple[Edge,...]
+    edge_index:Dict[Edge,int]; faces:Tuple[Face,...]; d1:np.ndarray; d
