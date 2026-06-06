@@ -17,10 +17,4 @@ class DodecahedralGeometry:
     vertices: Tuple[int, ...]
     edges: Tuple[Edge, ...]
     edge_index: Dict[Edge, int]
-    faces: Tuple[Face, ...]
-    d1: np.ndarray
-    d2: np.ndarray
-
-
-def oriented_edges(graph: nx.Graph) -> Tuple[Edge, ...]:
-    ""
+    faces
